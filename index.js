@@ -41,5 +41,15 @@ function playGame(playerChoice){
                     result = "YOU WIN!"
                 }
                 break; 
-                          
+            case "spock":
+                if (houseChoice === "paper" || houseChoice === "lizard"){
+                    result = "YOU LOSE!" 
+                } else {
+                    result = "YOU WIN!"
+                }
+                    break;
+    
+                       
+        }
+    }             
             
