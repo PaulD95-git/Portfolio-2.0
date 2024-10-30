@@ -22,7 +22,7 @@ h1{
     cursor: pointer;
     transition: background-color 0.5s ease;
 }
-.choices button:hover{
+#choices button:hover{
     background-color: hsl(200, 100%, 70%);
 }
 #playerDisplay, #computerDisplay{
