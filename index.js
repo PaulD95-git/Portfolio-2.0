@@ -1,6 +1,6 @@
 const choice = ["rock", "paper", "scissors","lizard","spock"];
 const playerDisplay = document.getElementById("playerDisplay");
-const computerDisplay = document.getElementById("houseDisplay");
+const computerDisplay = document.getElementById("computerDisplay");
 const resultDisplay = document.getElementById("resultDisplay");
 const playerScoreDisplay = document.getElementById("playerScoreDisplay");
 const computerScoreDisplay = document.getElementById("computerScoreDisplay");
@@ -8,43 +8,43 @@ let playerScore = 0;
 let computerScore = 0;
 
 function playGame(playerChoice){
-    const houseChoice = choice[Math.floor(Math.random() * 5)];
+    const computerChoice = choice[Math.floor(Math.random() * 5)];
     let result = "";
-    if(playerChoice === houseChoice){
+    if(playerChoice === computerChoice){
         result = "ITS A TIE!";
     }
     else{
         switch(playerChoice){
             case "rock":
-                if (houseChoice === "paper" || houseChoice === "spock"){
+                if (computerChoice === "paper" || computerChoice === "spock"){
                     result = "YOU LOSE!" 
                 } else {
                     result = "YOU WIN!"
                 }
                 break;
             case "paper":
-                if (houseChoice === "scissors" || houseChoice === "lizard"){
+                if (computerChoice === "scissors" || computerChoice === "lizard"){
                     result = "YOU LOSE!" 
                 } else {
                     result = "YOU WIN!"
                 }
                 break;
             case "scissors":
-                if (houseChoice === "rock" || houseChoice === "spock"){
+                if (computerChoice === "rock" || computerChoice === "spock"){
                     result = "YOU LOSE!" 
                 } else {
                     result = "YOU WIN!"
                 }
                 break;
             case "lizard":
-                if (houseChoice === "rock" || houseChoice === "scissors"){
+                if (computerChoice === "rock" || computerChoice === "scissors"){
                     result = "YOU LOSE!" 
                 } else {
                     result = "YOU WIN!"
                 }
                 break; 
             case "spock":
-                if (houseChoice === "paper" || houseChoice === "lizard"){
+                if (computerChoice === "paper" || computerChoice === "lizard"){
                     result = "YOU LOSE!" 
                 } else {
                     result = "YOU WIN!"
@@ -56,7 +56,7 @@ function playGame(playerChoice){
     }             
             
     playerDisplay.textContent = `PLAYER: ${playerChoice}`;
-    houseDisplay.textContent = `HOUSE: ${houseChoice}`;
+    computerDisplay.textContent = `COMPUTER: ${computerChoice}`;
     resultDisplay.textContent = result;
 
     resultDisplay.classList.remove("greenText", "redText");
