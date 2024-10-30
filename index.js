@@ -60,3 +60,17 @@ function playGame(playerChoice){
     resultDisplay.textContent = result;
 
     resultDisplay.classList.remove("greenText", "redText");
+
+    switch(result){
+        case "YOU WIN!":
+            resultDisplay.classList.add("greenText");
+            playerScore++;
+            playerScoreDisplay.textContent = playerScore;
+            break;
+        case "YOU LOSE!":
+            resultDisplay.classList.add("redText");
+            computerScore++;
+            computerScoreDisplay.textContent = computerScore;
+            break;
+    }
+}
