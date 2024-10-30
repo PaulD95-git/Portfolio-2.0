@@ -11,3 +11,12 @@ function playGame(playerChoice){
     if(playerChoice === houseChoice){
         result = "ITS A TIE!";
     }
+    else{
+        switch(playerChoice){
+            case "rock":
+                if (houseChoice === "paper" || houseChoice === "spock"){
+                    result = "YOU LOSE!" 
+                } else {
+                    result = "YOU WIN!"
+                }
+                break;
