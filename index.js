@@ -26,11 +26,20 @@ function playGame(playerChoice){
                 } else {
                     result = "YOU WIN!"
                 }
-                    break;
+                break;
             case "scissors":
                 if (houseChoice === "rock" || houseChoice === "spock"){
                     result = "YOU LOSE!" 
                 } else {
                     result = "YOU WIN!"
                 }
-                    break;
+                break;
+            case "lizard":
+                if (houseChoice === "rock" || houseChoice === "scissors"){
+                    result = "YOU LOSE!" 
+                } else {
+                    result = "YOU WIN!"
+                }
+                break; 
+                          
+            
