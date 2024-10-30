@@ -27,3 +27,10 @@ function playGame(playerChoice){
                     result = "YOU WIN!"
                 }
                     break;
+            case "scissors":
+                if (houseChoice === "rock" || houseChoice === "spock"){
+                    result = "YOU LOSE!" 
+                } else {
+                    result = "YOU WIN!"
+                }
+                    break;
