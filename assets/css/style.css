@@ -10,10 +10,10 @@ h1{
     font-size: 3.5rem;
     color: hsl(0, 0%, 20%);
 }
-.choices{
+#choices{
     margin-bottom: 30px;
 }
-.choices button{
+#choices button{
     font-size: 7.5rem;
     min-width: 160px;
     margin: 0 10px;
