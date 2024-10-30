@@ -4,6 +4,8 @@ const computerDisplay = document.getElementById("houseDisplay");
 const resultDisplay = document.getElementById("resultDisplay");
 const playerScoreDisplay = document.getElementById("playerScoreDisplay");
 const computerScoreDisplay = document.getElementById("computerScoreDisplay");
+let playerScore = 0;
+let computerScore = 0;
 
 function playGame(playerChoice){
     const houseChoice = choice[Math.floor(Math.random() * 5)];
