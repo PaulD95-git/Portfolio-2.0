@@ -8,3 +8,6 @@ const computerScoreDisplay = document.getElementById("computerScoreDisplay");
 function playGame(playerChoice){
     const houseChoice = choice[Math.floor(Math.random() * 5)];
     let result = "";
+    if(playerChoice === houseChoice){
+        result = "ITS A TIE!";
+    }
