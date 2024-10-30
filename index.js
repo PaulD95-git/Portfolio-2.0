@@ -58,3 +58,5 @@ function playGame(playerChoice){
     playerDisplay.textContent = `PLAYER: ${playerChoice}`;
     houseDisplay.textContent = `HOUSE: ${houseChoice}`;
     resultDisplay.textContent = result;
+
+    resultDisplay.classList.remove("greenText", "redText");
