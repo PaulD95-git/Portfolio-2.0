@@ -68,3 +68,36 @@ h1{
         font-size: 1.8rem;
     }
 }
+
+/* Mobile: Screen width less than 600px */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    #choices {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    #choices button {
+        font-size: 4rem;
+        min-width: 80px;
+        margin: 5px;
+    }
+
+    #playerDisplay, #computerDisplay {
+        font-size: 1.5rem;
+    }
+
+    #resultDisplay {
+        font-size: 3rem;
+        margin: 20px 0;
+    }
+
+    .scoreDisplay {
+        font-size: 1.5rem;
+    }
+}
