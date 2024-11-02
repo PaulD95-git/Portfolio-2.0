@@ -1,3 +1,4 @@
+/* Base styles */
 body{
     font-family: Arial, sans-serif;
     font-weight: bold;
@@ -40,4 +41,30 @@ h1{
 }
 .redText, #computerScoreDisplay{
     color: hsl(0, 84%, 60%);
+}
+
+/* Tablet: Screen width between 600px and 900px */
+@media (max-width: 900px) {
+    h1 {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    #choices button {
+        font-size: 5rem;
+        min-width: 120px;
+        margin: 0 5px;
+    }
+
+    #playerDisplay, #computerDisplay {
+        font-size: 2rem;
+    }
+
+    #resultDisplay {
+        font-size: 4rem;
+    }
+
+    .scoreDisplay {
+        font-size: 1.8rem;
+    }
 }
