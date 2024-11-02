@@ -1,4 +1,6 @@
-const choice = ["rock", "paper", "scissors","lizard","spock"];
+/* jshint esversion: 6 */
+
+const choice = ["rock", "paper", "scissors", "lizard", "spock"];
 const playerDisplay = document.getElementById("playerDisplay");
 const computerDisplay = document.getElementById("computerDisplay");
 const resultDisplay = document.getElementById("resultDisplay");
@@ -7,61 +9,58 @@ const computerScoreDisplay = document.getElementById("computerScoreDisplay");
 let playerScore = 0;
 let computerScore = 0;
 
-function playGame(playerChoice){
+function playGame(playerChoice) {
     const computerChoice = choice[Math.floor(Math.random() * 5)];
     let result = "";
-    if(playerChoice === computerChoice){
+    if (playerChoice === computerChoice) {
         result = "ITS A TIE!";
-    }
-    else{
-        switch(playerChoice){
+    } else {
+        switch (playerChoice) {
             case "rock":
-                if (computerChoice === "paper" || computerChoice === "spock"){
-                    result = "YOU LOSE!" 
+                if (computerChoice === "paper" || computerChoice === "spock") {
+                    result = "YOU LOSE!";
                 } else {
-                    result = "YOU WIN!"
+                    result = "YOU WIN!";
                 }
                 break;
             case "paper":
-                if (computerChoice === "scissors" || computerChoice === "lizard"){
-                    result = "YOU LOSE!" 
+                if (computerChoice === "scissors" || computerChoice === "lizard") {
+                    result = "YOU LOSE!";
                 } else {
-                    result = "YOU WIN!"
+                    result = "YOU WIN!";
                 }
                 break;
             case "scissors":
-                if (computerChoice === "rock" || computerChoice === "spock"){
-                    result = "YOU LOSE!" 
+                if (computerChoice === "rock" || computerChoice === "spock") {
+                    result = "YOU LOSE!";
                 } else {
-                    result = "YOU WIN!"
+                    result = "YOU WIN!";
                 }
                 break;
             case "lizard":
-                if (computerChoice === "rock" || computerChoice === "scissors"){
-                    result = "YOU LOSE!" 
+                if (computerChoice === "rock" || computerChoice === "scissors") {
+                    result = "YOU LOSE!";
                 } else {
-                    result = "YOU WIN!"
+                    result = "YOU WIN!";
                 }
-                break; 
+                break;
             case "spock":
-                if (computerChoice === "paper" || computerChoice === "lizard"){
-                    result = "YOU LOSE!" 
+                if (computerChoice === "paper" || computerChoice === "lizard") {
+                    result = "YOU LOSE!";
                 } else {
-                    result = "YOU WIN!"
+                    result = "YOU WIN!";
                 }
-                    break;
-    
-                       
+                break;
         }
-    }             
-            
+    }
+
     playerDisplay.textContent = `PLAYER: ${playerChoice}`;
     computerDisplay.textContent = `COMPUTER: ${computerChoice}`;
     resultDisplay.textContent = result;
 
     resultDisplay.classList.remove("greenText", "redText");
 
-    switch(result){
+    switch (result) {
         case "YOU WIN!":
             resultDisplay.classList.add("greenText");
             playerScore++;
