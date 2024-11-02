@@ -11,9 +11,7 @@ This is a **Rock Paper Scissors Lizard Spock** game, a fun twist on the classic 
 3. [Technologies Used](#technologies-used)
 4. [How to Play](#how-to-play)
 5. [Code Structure](#code-structure)
-6. [Bugs and Known Issues](#bugs-and-known-issues)
-7. [Future Enhancements](#future-enhancements)
-8. [Credits](#credits)
+
 
 ---
 
