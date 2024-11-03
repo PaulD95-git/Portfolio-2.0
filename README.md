@@ -10,8 +10,8 @@ This is a **Rock Paper Scissors Lizard Spock** game, a fun twist on the classic 
 2. [Features](#features)
 3. [Technologies Used](#technologies-used)
 4. [How to Play](#how-to-play)
-5. [Code Structure](#code-structure)
-
+5. [Credits](#credits)
+6. [Code Structure](#code-structure)
 
 ---
 
@@ -63,6 +63,12 @@ The **Rock Paper Scissors Lizard Spock** game is a web-based interactive game bu
    - **Lizard** eats **Paper** and poisons **Spock**
    - **Spock** smashes **Scissors** and vaporizes **Rock**
 4. **Winning/Losing Feedback**: The result display changes color based on the game outcome: green for a win, red for a loss.
+
+---
+
+## Credits
+Credits to BroCodez for inspiring this project.
+https://www.youtube.com/watch?v=3uKdQx-SZ5A&t=744s
 
 ---
 
